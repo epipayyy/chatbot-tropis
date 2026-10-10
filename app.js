@@ -381,7 +381,7 @@
     if (!sendBtn.disabled) send(button.textContent);
   }));
 
-  fetch("/tropical_plants_kb.json")
+  fetch("./tropical_plants_kb.json")
     .then(response => {
       if (!response.ok) throw new Error(`Gagal memuat basis pengetahuan (${response.status}).`);
       return response.json();
